@@ -31,11 +31,8 @@
     "vscode": {
       "extensions": [
         "hashicorp.terraform",
-        "ms-kubernetes-tools.vscode-kubernetes-tools",
         "ms-vscode.vscode-json",
-        "redhat.vscode-yaml",
-        "ms-azuretools.vscode-docker",
-        "amazonwebservices.aws-toolkit-vscode"
+        "redhat.vscode-yaml"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
@@ -50,7 +47,6 @@
   "remoteUser": "vscode",
   
   "containerEnv": {
-    "TF_LOG": "INFO"
   },
 
   "mounts": [
