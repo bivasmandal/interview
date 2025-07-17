@@ -1,7 +1,26 @@
 # DevOps Interview Environment Post-Create Setup Script
 echo "🚀 DevOps interview environment..."
 
- Create AWS OIDC authentication script
+# Update system packages
+sudo apt-get update -y
+
+# Install additional useful tools
+sudo apt-get install -y \
+    curl \
+    wget \
+    unzip \
+    jq \
+    tree \
+    htop \
+    net-tools \
+    vim \
+    nano
+
+# Create sample project structure
+echo "📁 Creating sample project structure..."
+mkdir -p ~/interview-workspace/scripts
+
+#Create AWS OIDC authentication script
 cat > ~/interview-workspace/scripts/aws-oidc-auth.sh << 'EOF'
 #!/bin/bash
 # AWS OIDC Authentication for GitHub Codespaces
